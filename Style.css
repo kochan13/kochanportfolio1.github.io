@@ -1,0 +1,524 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+h1, h2, h3, p {
+    margin: 0;
+}
+h1 {
+    font-size: 2.25em;
+}
+.box-menu:hover {
+    scale: 1.1;
+}
+button {
+    border: 0;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: scale 0.4s ease-in-out, opacity 0.5s ease-in-out, box-shadow 0.4s ease-in-out;
+    border-radius: 0.25em 0.25em 1em 1em;
+    background: #92140C;
+    color: #FFF8F0;
+}
+button:hover {
+    opacity: 85%;
+    box-shadow: 0 0.125em 0.25em 0 #FFF8F0;
+}
+button:active {
+    scale: 0.9;
+}
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #FFF8F0;
+    margin: 0;
+    background: url(Asset/Background.svg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em 5em 0 5em;
+    position: absolute;
+}
+header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+header .logo img {
+    width: 2em; height: auto;
+}
+header .cart {
+    width: fit-content; 
+    height: fit-content;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transition: scale 0.4s ease-in-out, background-color 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+header .cart img {
+    width: 1.5em; height: auto;
+}
+header .cart:hover {
+    scale: 1.1;
+    background-color: #92140C;
+}
+header .cart:active {
+    scale: 0.9;
+    opacity: 50%;
+}
+
+main {
+    width: 100%; height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    padding-bottom: 0;
+    gap: 2em;
+    background-color: rgba(50, 50, 56, 0.85);
+}
+.konten1, .konten2, .konten3, .konten4 {
+    width: 100%;
+    height: fit-content;
+    padding: 3em;
+    border-radius: 4em;
+    background: rgba(30, 30, 36, 0.75);
+}
+.konten1 .text {
+    width: 45%; height: fit-content;
+    min-width: 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+}
+.konten1 .text .con-dot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1em;
+}
+.konten1 .text .con-dot .dot {
+    width: 0.75em;
+    height: 0.75em;
+    background-color: #FFF8F0;
+    margin: 7.5em 0 1em;
+    border-radius: 99px;
+} 
+.konten1 .text h1 {
+    text-align: left;
+    width: 100%;
+}
+.konten1 .text p {
+    text-align: justify;
+    width: 100%;
+}
+.konten1 .text button {
+    width: 13em;
+    height: 3em;
+    margin: 1em 0 4em 0;
+}
+.konten1 .text .playbtn:active {
+    scale: 0.9;
+}
+.konten1 .text .location {
+    width: 18em;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.konten1 .text .location img {
+    width: 2.25em;
+    height: auto;
+}
+.konten1 .text .location p {
+    text-align: left;
+}
+
+.konten2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2em;
+}
+.left {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3em;
+}
+.right {
+    padding-top: 8em;
+}
+.left .con-menu {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3em;
+    padding-top: 5em;
+    padding-bottom: 1em;
+}
+.left .con-menu .box-menu {
+    width: 12em; height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: scale 0.4s ease-in-out;
+}
+.left .con-menu .box-menu .menu {
+    width: 100%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left .con-menu .box-menu .menu .gambar {
+    width: 12em;
+    height: 8em;
+    z-index: 1;
+}
+.left .con-menu .box-menu .menu .gambar img {
+    width: 12em;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(255, 248, 240, 0.50);
+    border-radius: 999px;
+}
+.left .con-menu .box-menu .menu p {
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    padding: 3.5em 1.75em 2em 1.75em;
+    background-color: #1E1E1E;
+    border-radius: 2em;
+}
+.left .con-menu .box-menu button {
+    width: 10em;
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+.left .con-menu .box-menu button span {
+    font-size: 1.25em;
+}
+.konten3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 24em;
+}
+.konten3 .left {
+    width: 100%;
+}
+.konten3 .left .con-menu {
+    gap: 7em;
+    justify-content: flex-start;
+}
+.konten3 .left .con-menu .box-menu .menu .gambar {
+    display: flex;
+    justify-content: center;
+    height: 9em;
+}
+.konten3 .left .con-menu .box-menu .menu .gambar img {
+    width: auto;
+    height: 13.5em;
+    border-radius: 2em;
+}
+.konten3 .left .con-menu .box-menu .menu {
+    height: 16em;
+}
+.konten4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5em;
+}
+.konten4 .left .con-menu .box-menu .menu .gambar img {
+    width: 10em;
+    height: auto;
+    border-radius: 2em;
+    display: block;
+    margin: 0 auto;
+}
+.konten4 .left .con-menu .box-menu .menu .gambar {
+    height: 7em;
+}
+.konten4 .left .con-menu .box-menu .menu {
+    height: 14em;
+}
+.konten4 .konten4-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    height: 16em;
+}
+.konten4 .konten4-title .box {
+    width: fit-content;
+    height: fit-content;
+}
+.konten4 .konten4-title .box h1 {
+    text-align: center;
+}
+.konten4 .konten4-title img {
+    width: 24em;
+    height: auto;
+    border-radius: 6em;
+    border-top: 2em solid #92140C;
+    border-bottom: 2em solid #92140C;
+    border-left: 1em solid #92140C;
+    border-right: 1em solid #92140C;
+}
+.konten4 .left .con-menu {
+    justify-content: center;
+    align-items: flex-end;
+    height: 38em;
+}
+.konten4 .naik {
+    align-self: flex-start;
+    padding-top: 2em;
+}
+.page1 {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    right: 0;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.page1 .box {
+    width: fit-content;
+    height: 34.625em;
+}
+.page1 .box img {
+    width: 40em;
+    height: auto;
+    border-top: 1em solid #92140C;
+    border-left: 2em solid #92140C;
+    border-bottom: 1em solid #92140C;
+    border-radius: 16em 0 0 16em;
+}
+.page1 .label {
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5em 2.5em;
+    background-color: #92140C;
+    border-radius: 2em 0 0 0;
+}
+.page1 .label p {
+    font-size: 2em;
+}
+
+.page2 {
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    left: 0;
+    top: 1450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.page2 .box {
+    width: fit-content;
+    height: 25.5em;
+}
+.page2 .box img {
+    width: 22em;
+    height: auto;
+    border-top: 1em solid #92140C;
+    border-right: 2em solid #92140C;
+    border-bottom: 1em solid #92140C;
+    border-radius: 0em 8em 8em 0;
+}
+.page2 .label {
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5em 2.5em;
+    background-color: #92140C;
+    border-radius: 0 2em 0 0;
+}
+.page2 .label p {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1300px) {
+    .konten2 .left .con-menu {
+        overflow-x: scroll;
+    }
+    .right {
+        padding-top: 0;
+    }
+    .konten3 .left .con-menu {
+        gap: 3em;
+        overflow-x: scroll;
+    }
+    .konten3 {
+        padding-left: 29vw;
+    }
+    .page1 {
+        transform: scale(0.8);
+        right: -63px;
+        top: 220px;
+    }
+    .page2 {
+        transform: scale(0.9);
+        left: -30px;
+        top: 1320px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .konten3 {
+        padding-left: 25vw;
+    }
+    .konten4 .left .atas .box {
+        width: fit-content;
+    }
+    .konten4 .naik {
+        align-self: flex-end;
+        padding-top: 0;
+    }
+    .konten4 .left .con-menu {
+        overflow: scroll;
+        justify-content: flex-start;
+        gap: 3em;
+    }
+    .page1 {
+        transform: scale(0.6);
+        right: -128px;
+        top: 300px;
+    }
+    .page2 {
+        transform: scale(0.7);
+        left: -60px;
+        top: 1330px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .page2 {
+        transform: scale(0.6);
+        left: -80px;
+        top: 1330px;
+    }
+}
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 12px;
+    }
+    .page1 {
+        top: 230px;
+        right: -96px;
+    }
+    .page2 {
+        transform: scale(0.6);
+        left: -60px;
+        top: 1000px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .page1 {
+        transform: scale(0.4);
+        right: -144px;
+        top: 280px;
+    }
+    .page1 .label {
+        border-radius: 2em 0 0 2em;
+    }
+    .page1 .label p {
+        font-size: 3.5em;
+    }
+    .page2 {
+        transform: scale(0.5);
+        left: -70px;
+    }
+    .page2 .label {
+        border-radius: 0 2em 2em 0;
+    }
+    .page2 .label p {
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 10px;
+    }
+    .page1 {
+        transform: scale(0.4);
+        right: -120px;
+        top: 330px;
+    }
+    .konten2 .left {
+        padding-top: 6em;
+        gap: 8em;
+    }
+    .konten4 .konten4-title img {
+        width: 20em;
+    }
+    .page2 {
+        top: 925px;
+        left: -60px;
+    }
+}
+@media screen and (max-width: 350px) {
+    body {
+        font-size: 8px;
+    }
+    .page1 {
+        transform: scale(0.4);
+        right: -96px;
+        top: 270px;
+    }
+    .konten2 .left h1 {
+        width: 35vw;
+    }
+    .konten1 .text {
+        min-width: 25em;
+    }
+    .page2 {
+        top: 740px;
+        left: -50px;
+    }
+    .konten3 {
+        padding-left: 28vw;
+    }
+}
+@media screen and (min-width: 1500px) {
+    body {
+        font-size: 18px;
+    }
+    .konten4 .naik1, .konten4 .naik2 {
+        bottom: -350%;
+    }
+}
